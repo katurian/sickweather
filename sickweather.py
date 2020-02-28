@@ -11,7 +11,7 @@ def getMarkersInRadius(lat, lon, ids, limit, radius, date_start, date_end):
     resultJSON = r.json()
     return resultJSON
 
-def MarkerCountInRadius(lat, lon, ids, limit, radius, date_start, date_end):
+def markerCountInRadius(lat, lon, ids, limit, radius, date_start, date_end):
     r = requests.get(f'https://mobilesvc.sickweather.com/ws/v2.0/markers/getMarkerCountInRadius.php?lat={lat}&lon={lon}&ids={ids}&radius={radius}&date_start={date_start}&date_end={date_end}&api_key={api_key}', verify=False)
     resultJSON = r.json()
     return resultJSON
