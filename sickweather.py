@@ -60,7 +60,3 @@ def submitReport(lat, lon, ids, report, temp):
 markers = getMarkersInRadius("40.730610", "-73.935242", "15", "25", "10", "2020-02-20", "2020-02-27")
 pprint(markers)
 
-
-
-
-
