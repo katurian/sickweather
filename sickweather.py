@@ -52,7 +52,7 @@ def getAllergySickScoreInRadius(lat, lon):
     return resultJSON
 
 def submitReport(lat, lon, ids, report, temp):
-    r = requests.get(f'https://mobilesvc.sickweather.com/ws/v2.0/reporting/submitReport.php?lat={lat}&lon=3{lon}&id={}&report={report}&temp={temp}&api_key={api_key}', verify=False)
+    r = requests.get(f'https://mobilesvc.sickweather.com/ws/v2.0/reporting/submitReport.php?lat={lat}&lon=3{lon}&id={ids}&report={report}&temp={temp}&api_key={api_key}', verify=False)
     resultJSON = r.json()
     return resultJSON
 
