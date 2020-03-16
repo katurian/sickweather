@@ -1,2 +1,2 @@
 # sickweather
-A Python wrapper for Sickweather API
+A Python wrapper for the Sickweather API
